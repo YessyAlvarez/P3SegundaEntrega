@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model HolaMundoMVC.Models.Usuario
+
+@Html.ValidationSummary()
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(m => m.Nombre)
+        @Html.TextBoxFor(m => m.Nombre)
+        @Html.ValidationMessageFor(m => m.Nombre)
+    </p>
+    <p>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </p>
+
+    <p>
+        <label for="Password">Password:</label>
+        @Html.PasswordFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
+    </p>
+
+
+    <p>
+        <input type="submit" value="Registrarse" />
+    </p>
+}

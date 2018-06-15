@@ -1,0 +1,391 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E88B9A73-F75C-4BC5-8FFD-603D35D331E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfazWeb</RootNamespace>
+    <AssemblyName>InterfazWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference\Service1.wsdl" />
+    <None Include="Connected Services\ServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="PerfilAdmin\ListadoFuncionarios.aspx" />
+    <Content Include="PerfilFMantenimiento\ABMEtapa.aspx" />
+    <Content Include="PerfilFMantenimiento\ABMTramite.aspx" />
+    <Content Include="PerfilFMantenimiento\AltaTramite.aspx" />
+    <Content Include="PerfilFMantenimiento\AsignarEtapaATramite.aspx" />
+    <Content Include="PerfilFMantenimiento\CrearEtapa.aspx" />
+    <Content Include="PerfilFMantenimiento\EditarEtapa.aspx" />
+    <Content Include="PerfilFMantenimiento\EditarTramite.aspx" />
+    <Content Include="Properties\DataSources\WCFService.DTOEtapa.datasource" />
+    <Content Include="Properties\DataSources\WCFService.DTOGrupo.datasource" />
+    <Content Include="Properties\DataSources\WCFService.DTOTramite.datasource" />
+    <Content Include="Properties\DataSources\WCFService.DTOUsuario.datasource" />
+    <Content Include="Properties\DataSources\WCFService.DTOGrupoTramite.datasource" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bienvenidos\BienvenidoAdmin.aspx" />
+    <Content Include="Bienvenidos\BienvenidoFMantenimiento.aspx" />
+    <None Include="Connected Services\ServiceReference\Service1.disco" />
+    <None Include="Connected Services\ServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="InicioWeb.aspx" />
+    <Content Include="Inicio\AltaInicio.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="PerfilAdmin\ABMFuncionarios.aspx" />
+    <Content Include="PerfilAdmin\ABMGrupos.aspx" />
+    <Content Include="PerfilAdmin\AltaFuncionario.aspx" />
+    <Content Include="PerfilAdmin\AltaGrupo.aspx" />
+    <Content Include="PerfilAdmin\EditarFuncionario.aspx" />
+    <Content Include="PerfilAdmin\EditarGrupo.aspx" />
+    <Content Include="PerfilAdmin\EliminarGrupo.aspx" />
+    <Content Include="PerfilAdmin\GuardarEnTxt.aspx" />
+    <Content Include="PerfilAdmin\ListarGrupos.aspx" />
+    <Content Include="theme\css\evento.css" />
+    <Content Include="theme\css\inicio.css" />
+    <Content Include="theme\css\login.css" />
+    <Content Include="theme\img\bg-admin.jpg" />
+    <Content Include="theme\img\bg-funcionario.jpg" />
+    <Content Include="theme\img\bg-inicio.jpg" />
+    <Content Include="theme\img\InicioGestion.jpg" />
+    <Content Include="theme\img\login.jpg" />
+    <Content Include="theme\img\TituloGestionTramite.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Master\Login.Master" />
+    <Content Include="Master\PerfilAdmin.Master" />
+    <Content Include="Master\PerfilFMantenimiento.Master" />
+    <Content Include="Master\Inicio.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bienvenidos\BienvenidoAdmin.aspx.cs">
+      <DependentUpon>BienvenidoAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bienvenidos\BienvenidoAdmin.aspx.designer.cs">
+      <DependentUpon>BienvenidoAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bienvenidos\BienvenidoFMantenimiento.aspx.cs">
+      <DependentUpon>BienvenidoFMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bienvenidos\BienvenidoFMantenimiento.aspx.designer.cs">
+      <DependentUpon>BienvenidoFMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="InicioWeb.aspx.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioWeb.aspx.designer.cs">
+      <DependentUpon>InicioWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\AltaInicio.aspx.cs">
+      <DependentUpon>AltaInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio\AltaInicio.aspx.designer.cs">
+      <DependentUpon>AltaInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Inicio.Master.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Inicio.Master.designer.cs">
+      <DependentUpon>Inicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PerfilAdmin.Master.cs">
+      <DependentUpon>PerfilAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PerfilAdmin.Master.designer.cs">
+      <DependentUpon>PerfilAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PerfilFMantenimiento.Master.cs">
+      <DependentUpon>PerfilFMantenimiento.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\PerfilFMantenimiento.Master.designer.cs">
+      <DependentUpon>PerfilFMantenimiento.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\ABMFuncionarios.aspx.cs">
+      <DependentUpon>ABMFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\ABMFuncionarios.aspx.designer.cs">
+      <DependentUpon>ABMFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\ABMGrupos.aspx.cs">
+      <DependentUpon>ABMGrupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\ABMGrupos.aspx.designer.cs">
+      <DependentUpon>ABMGrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\AltaFuncionario.aspx.cs">
+      <DependentUpon>AltaFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\AltaFuncionario.aspx.designer.cs">
+      <DependentUpon>AltaFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\AltaGrupo.aspx.cs">
+      <DependentUpon>AltaGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\AltaGrupo.aspx.designer.cs">
+      <DependentUpon>AltaGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\EditarFuncionario.aspx.cs">
+      <DependentUpon>EditarFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\EditarFuncionario.aspx.designer.cs">
+      <DependentUpon>EditarFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\EditarGrupo.aspx.cs">
+      <DependentUpon>EditarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\EditarGrupo.aspx.designer.cs">
+      <DependentUpon>EditarGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\EliminarGrupo.aspx.cs">
+      <DependentUpon>EliminarGrupo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\EliminarGrupo.aspx.designer.cs">
+      <DependentUpon>EliminarGrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\GuardarEnTxt.aspx.cs">
+      <DependentUpon>GuardarEnTxt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\GuardarEnTxt.aspx.designer.cs">
+      <DependentUpon>GuardarEnTxt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\ListadoFuncionarios.aspx.cs">
+      <DependentUpon>ListadoFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\ListadoFuncionarios.aspx.designer.cs">
+      <DependentUpon>ListadoFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAdmin\ListarGrupos.aspx.cs">
+      <DependentUpon>ListarGrupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAdmin\ListarGrupos.aspx.designer.cs">
+      <DependentUpon>ListarGrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\ABMEtapa.aspx.cs">
+      <DependentUpon>ABMEtapa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\ABMEtapa.aspx.designer.cs">
+      <DependentUpon>ABMEtapa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\ABMTramite.aspx.cs">
+      <DependentUpon>ABMTramite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\ABMTramite.aspx.designer.cs">
+      <DependentUpon>ABMTramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\AltaTramite.aspx.cs">
+      <DependentUpon>AltaTramite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\AltaTramite.aspx.designer.cs">
+      <DependentUpon>AltaTramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\AsignarEtapaATramite.aspx.cs">
+      <DependentUpon>AsignarEtapaATramite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\AsignarEtapaATramite.aspx.designer.cs">
+      <DependentUpon>AsignarEtapaATramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\CrearEtapa.aspx.cs">
+      <DependentUpon>CrearEtapa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\CrearEtapa.aspx.designer.cs">
+      <DependentUpon>CrearEtapa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\EditarEtapa.aspx.cs">
+      <DependentUpon>EditarEtapa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\EditarEtapa.aspx.designer.cs">
+      <DependentUpon>EditarEtapa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\EditarTramite.aspx.cs">
+      <DependentUpon>EditarTramite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilFMantenimiento\EditarTramite.aspx.designer.cs">
+      <DependentUpon>EditarTramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="theme\fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WCFService\WCFService.csproj">
+      <Project>{1FDB1600-E582-4AB9-9321-DC1D401A9B0E}</Project>
+      <Name>WCFService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58759</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58759/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

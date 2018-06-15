@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:58771/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:58771/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:58771/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFService" />
+      <xsd:import schemaLocation="http://localhost:58771/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dominio" />
+      <xsd:import schemaLocation="http://localhost:58771/Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_WCFAddGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGetTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGetTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGetTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGetTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarTramites_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarTramites" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarTramites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarTramitesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerTramitePorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerTramitePorId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerTramitePorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerTramitePorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditarTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditarTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditarTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditarTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddEtapa_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddEtapa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddEtapa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddEtapaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarEtapas_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarEtapas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarEtapas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarEtapasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditarEtapaCodDes_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditarEtapaCodDes" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditarEtapaCodDes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditarEtapaCodDesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxtResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFExisteNombreTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFExisteNombreTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFExisteNombreTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFExisteNombreTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarGrupos_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarGrupos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarGrupos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarGruposResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGetGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGetGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGetGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGetGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerGrupoPorId_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerGrupoPorId" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerGrupoPorId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerGrupoPorIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFValidarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFValidarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGetNombreCompleto_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGetNombreCompleto" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGetNombreCompleto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGetNombreCompletoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarGruposVacios_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarGruposVacios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarGruposVacios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarGruposVaciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEliminarGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEliminarGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEliminarGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEliminarGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarPerfiles_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarPerfiles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarPerfiles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarPerfilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerIdUSuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerIdUSuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerIdUSuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerIdUSuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddUsuarioGrupo_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddUsuarioGrupo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddUsuarioGrupo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddUsuarioGrupoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarGrupoUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarGrupoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarGrupoUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarGrupoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarFuncionarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarFuncionarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFListarFuncionarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFListarFuncionariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_Grupos_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt_Grupos" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_Grupos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt_GruposResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_Funcionarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt_Funcionarios" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_Funcionarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt_FuncionariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_Tramites_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt_Tramites" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFGuardarTxt_Tramites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFGuardarTxt_TramitesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddGrupoTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddGrupoTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddGrupoTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddGrupoTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddGrupoDeGRupoTramitePorIdGT_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddGrupoDeGRupoTramitePorIdGT" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFAddGrupoDeGRupoTramitePorIdGT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFAddGrupoDeGRupoTramitePorIdGTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditarEtapa_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditarEtapa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFEditarEtapa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFEditarEtapaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerEtapaPorIdEtapa_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerEtapaPorIdEtapa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerEtapaPorIdEtapa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerEtapaPorIdEtapaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerIdGrupoTramitePorIdTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerIdGrupoTramitePorIdTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerIdGrupoTramitePorIdTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerIdGrupoTramitePorIdTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerGrupoTramitePorIdTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerGrupoTramitePorIdTramite" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WCFObtenerGrupoTramitePorIdTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WCFObtenerGrupoTramitePorIdTramiteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="WCFAddGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddGrupo" message="tns:IService1_WCFAddGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddGrupoResponse" message="tns:IService1_WCFAddGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddTramite" message="tns:IService1_WCFAddTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddTramiteResponse" message="tns:IService1_WCFAddTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGetTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGetTramite" message="tns:IService1_WCFGetTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGetTramiteResponse" message="tns:IService1_WCFGetTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarTramites">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarTramites" message="tns:IService1_WCFListarTramites_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarTramitesResponse" message="tns:IService1_WCFListarTramites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerTramitePorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerTramitePorId" message="tns:IService1_WCFObtenerTramitePorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerTramitePorIdResponse" message="tns:IService1_WCFObtenerTramitePorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditarTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFEditarTramite" message="tns:IService1_WCFEditarTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFEditarTramiteResponse" message="tns:IService1_WCFEditarTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddEtapa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddEtapa" message="tns:IService1_WCFAddEtapa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddEtapaResponse" message="tns:IService1_WCFAddEtapa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarEtapas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarEtapas" message="tns:IService1_WCFListarEtapas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarEtapasResponse" message="tns:IService1_WCFListarEtapas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditarEtapaCodDes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFEditarEtapaCodDes" message="tns:IService1_WCFEditarEtapaCodDes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFEditarEtapaCodDesResponse" message="tns:IService1_WCFEditarEtapaCodDes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt" message="tns:IService1_WCFGuardarTxt_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxtResponse" message="tns:IService1_WCFGuardarTxt_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFExisteNombreTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFExisteNombreTramite" message="tns:IService1_WCFExisteNombreTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFExisteNombreTramiteResponse" message="tns:IService1_WCFExisteNombreTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarGrupos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarGrupos" message="tns:IService1_WCFListarGrupos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarGruposResponse" message="tns:IService1_WCFListarGrupos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGetGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGetGrupo" message="tns:IService1_WCFGetGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGetGrupoResponse" message="tns:IService1_WCFGetGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerGrupoPorId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerGrupoPorId" message="tns:IService1_WCFObtenerGrupoPorId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerGrupoPorIdResponse" message="tns:IService1_WCFObtenerGrupoPorId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFEditGrupo" message="tns:IService1_WCFEditGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFEditGrupoResponse" message="tns:IService1_WCFEditGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFValidarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFValidarUsuario" message="tns:IService1_WCFValidarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFValidarUsuarioResponse" message="tns:IService1_WCFValidarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGetNombreCompleto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGetNombreCompleto" message="tns:IService1_WCFGetNombreCompleto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGetNombreCompletoResponse" message="tns:IService1_WCFGetNombreCompleto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarGruposVacios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarGruposVacios" message="tns:IService1_WCFListarGruposVacios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarGruposVaciosResponse" message="tns:IService1_WCFListarGruposVacios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFEliminarGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFEliminarGrupo" message="tns:IService1_WCFEliminarGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFEliminarGrupoResponse" message="tns:IService1_WCFEliminarGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarPerfiles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarPerfiles" message="tns:IService1_WCFListarPerfiles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarPerfilesResponse" message="tns:IService1_WCFListarPerfiles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddFuncionario" message="tns:IService1_WCFAddFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddFuncionarioResponse" message="tns:IService1_WCFAddFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerIdUSuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerIdUSuario" message="tns:IService1_WCFObtenerIdUSuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerIdUSuarioResponse" message="tns:IService1_WCFObtenerIdUSuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddUsuarioGrupo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddUsuarioGrupo" message="tns:IService1_WCFAddUsuarioGrupo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddUsuarioGrupoResponse" message="tns:IService1_WCFAddUsuarioGrupo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarGrupoUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarGrupoUsuario" message="tns:IService1_WCFListarGrupoUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarGrupoUsuarioResponse" message="tns:IService1_WCFListarGrupoUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerUsuario" message="tns:IService1_WCFObtenerUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerUsuarioResponse" message="tns:IService1_WCFObtenerUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarFuncionarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFListarFuncionarios" message="tns:IService1_WCFListarFuncionarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFListarFuncionariosResponse" message="tns:IService1_WCFListarFuncionarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt_Grupos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt_Grupos" message="tns:IService1_WCFGuardarTxt_Grupos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt_GruposResponse" message="tns:IService1_WCFGuardarTxt_Grupos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt_Funcionarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt_Funcionarios" message="tns:IService1_WCFGuardarTxt_Funcionarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt_FuncionariosResponse" message="tns:IService1_WCFGuardarTxt_Funcionarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt_Tramites">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt_Tramites" message="tns:IService1_WCFGuardarTxt_Tramites_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFGuardarTxt_TramitesResponse" message="tns:IService1_WCFGuardarTxt_Tramites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddGrupoTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddGrupoTramite" message="tns:IService1_WCFAddGrupoTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddGrupoTramiteResponse" message="tns:IService1_WCFAddGrupoTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddGrupoDeGRupoTramitePorIdGT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFAddGrupoDeGRupoTramitePorIdGT" message="tns:IService1_WCFAddGrupoDeGRupoTramitePorIdGT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFAddGrupoDeGRupoTramitePorIdGTResponse" message="tns:IService1_WCFAddGrupoDeGRupoTramitePorIdGT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditarEtapa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFEditarEtapa" message="tns:IService1_WCFEditarEtapa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFEditarEtapaResponse" message="tns:IService1_WCFEditarEtapa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerEtapaPorIdEtapa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerEtapaPorIdEtapa" message="tns:IService1_WCFObtenerEtapaPorIdEtapa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerEtapaPorIdEtapaResponse" message="tns:IService1_WCFObtenerEtapaPorIdEtapa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerIdGrupoTramitePorIdTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerIdGrupoTramitePorIdTramite" message="tns:IService1_WCFObtenerIdGrupoTramitePorIdTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerIdGrupoTramitePorIdTramiteResponse" message="tns:IService1_WCFObtenerIdGrupoTramitePorIdTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerGrupoTramitePorIdTramite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WCFObtenerGrupoTramitePorIdTramite" message="tns:IService1_WCFObtenerGrupoTramitePorIdTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WCFObtenerGrupoTramitePorIdTramiteResponse" message="tns:IService1_WCFObtenerGrupoTramitePorIdTramite_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WCFAddGrupo">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGetTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGetTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarTramites">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarTramites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerTramitePorId">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerTramitePorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditarTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFEditarTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddEtapa">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddEtapa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarEtapas">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarEtapas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditarEtapaCodDes">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFEditarEtapaCodDes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGuardarTxt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFExisteNombreTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFExisteNombreTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarGrupos">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarGrupos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGetGrupo">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGetGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerGrupoPorId">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerGrupoPorId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditGrupo">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFEditGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFValidarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGetNombreCompleto">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGetNombreCompleto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarGruposVacios">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarGruposVacios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFEliminarGrupo">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFEliminarGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarPerfiles">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarPerfiles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerIdUSuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerIdUSuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddUsuarioGrupo">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddUsuarioGrupo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarGrupoUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarGrupoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerUsuario">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFListarFuncionarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFListarFuncionarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt_Grupos">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGuardarTxt_Grupos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt_Funcionarios">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGuardarTxt_Funcionarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFGuardarTxt_Tramites">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFGuardarTxt_Tramites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddGrupoTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddGrupoTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFAddGrupoDeGRupoTramitePorIdGT">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFAddGrupoDeGRupoTramitePorIdGT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFEditarEtapa">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFEditarEtapa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerEtapaPorIdEtapa">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerEtapaPorIdEtapa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerIdGrupoTramitePorIdTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerIdGrupoTramitePorIdTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WCFObtenerGrupoTramitePorIdTramite">
+      <soap:operation soapAction="http://tempuri.org/IService1/WCFObtenerGrupoTramitePorIdTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:58771/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

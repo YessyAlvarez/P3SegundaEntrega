@@ -1,0 +1,58 @@
+﻿body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+}
+#LeftInicio{
+    width: 25%;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+    #LeftInicio img{
+        max-width: 100%;
+    }
+#ToptInicio {
+        background-image: url(../img/bg-inicio.jpg);
+        background-position: 0 0;
+        background-repeat: repeat-x;
+        width: 75%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        height: 250px;
+    }
+
+    #ToptInicio img {
+        padding: 3rem 0 0 2rem;
+    }
+
+#Content {
+    position: relative;
+    padding: 2%;
+    top: 150px;
+    left: 25%;
+    width: 71%;
+}
+#textIntroductorio{
+    font-size: 16pt;
+}
+.Accesos {
+    width: 75%;
+}
+    .Accesos .bottonLink {
+        width: 180px;
+        background-color: #EEEEEE;
+        text-align: center;
+        color: #000066;
+        margin: 2rem 2rem 0 0;
+        padding: 2%;
+        /*cursor: pointer;*/
+        font-size: 14pt;
+    }
+
+

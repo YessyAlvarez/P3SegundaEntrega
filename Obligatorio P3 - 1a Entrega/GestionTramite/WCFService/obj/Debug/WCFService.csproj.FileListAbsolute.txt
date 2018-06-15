@@ -1,0 +1,24 @@
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\WCFService.dll.config
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\WCFService.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\WCFService.pdb
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\AccesoDB.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\Dominio.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\AccesoDB.pdb
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\bin\Dominio.pdb
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\obj\Debug\WCFService.csprojResolveAssemblyReference.cache
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\obj\Debug\WCFService.csproj.CoreCompileInputs.cache
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\obj\Debug\WCFService.csproj.CopyComplete
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\obj\Debug\WCFService.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\WCFService\obj\Debug\WCFService.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\WCFService.dll.config
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\WCFService.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\WCFService.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\AccesoDB.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\Dominio.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\AccesoDB.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\bin\Dominio.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\obj\Debug\WCFService.csprojResolveAssemblyReference.cache
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\obj\Debug\WCFService.csproj.CoreCompileInputs.cache
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\obj\Debug\WCFService.csproj.CopyComplete
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\obj\Debug\WCFService.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\WCFService\obj\Debug\WCFService.pdb

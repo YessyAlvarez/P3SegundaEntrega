@@ -1,0 +1,48 @@
+﻿body {
+    background-image: url("../img/login.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#loginHome {
+    background-image: url(../img/login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+    #loginHome > table {
+        width: 30rem;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        border: none !important;
+        margin: 5% 20%;
+    }
+
+    #loginHome table table {
+        width: 100% !important;
+    }
+
+        #loginHome table table tr:nth-child(n+1) td {
+            color: #333333 !important;
+            font-size: 0.8rem !important;
+        }
+
+        #loginHome table table tr:nth-child(1) td {
+            background: none !important;
+            color: #30547F !important;
+            font-size: 1.1rem !important;
+        }
+
+        #loginHome table table tr {
+            height: 30px;
+        }

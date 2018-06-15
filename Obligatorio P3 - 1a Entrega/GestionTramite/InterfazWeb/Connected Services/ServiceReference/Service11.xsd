@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:58771/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Dominio" />
+  <xs:complexType name="ArrayOfDTOTramite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOTramite" nillable="true" type="tns:DTOTramite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOTramite" nillable="true" type="tns:ArrayOfDTOTramite" />
+  <xs:complexType name="DTOTramite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Costo" type="xs:double" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Etapas" nillable="true" type="tns:ArrayOfDTOEtapa" />
+      <xs:element minOccurs="0" name="Grupos" nillable="true" type="tns:ArrayOfDTOGrupoTramite" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Tiempo" type="xs:int" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOTramite" nillable="true" type="tns:DTOTramite" />
+  <xs:complexType name="ArrayOfDTOEtapa">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOEtapa" nillable="true" type="tns:DTOEtapa" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOEtapa" nillable="true" type="tns:ArrayOfDTOEtapa" />
+  <xs:complexType name="DTOEtapa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdEtapa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTramite" type="xs:int" />
+      <xs:element minOccurs="0" name="LapsoMax" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOEtapa" nillable="true" type="tns:DTOEtapa" />
+  <xs:complexType name="ArrayOfDTOGrupoTramite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOGrupoTramite" nillable="true" type="tns:DTOGrupoTramite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOGrupoTramite" nillable="true" type="tns:ArrayOfDTOGrupoTramite" />
+  <xs:complexType name="DTOGrupoTramite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CantidadMaxFuncionarios" type="xs:int" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GrupoFuncionarios" nillable="true" type="tns:ArrayOfDTOUsuario" />
+      <xs:element minOccurs="0" name="IdGrupo" type="xs:int" />
+      <xs:element minOccurs="0" name="IdGrupoTramite" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOGrupoTramite" nillable="true" type="tns:DTOGrupoTramite" />
+  <xs:complexType name="ArrayOfDTOUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOUsuario" nillable="true" type="tns:DTOUsuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOUsuario" nillable="true" type="tns:ArrayOfDTOUsuario" />
+  <xs:complexType name="DTOUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="NombreCompleto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Dominio" minOccurs="0" name="Rol" nillable="true" type="q1:Grupo" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Dominio" minOccurs="0" name="TipoPerfil" type="q2:EnumPerfil" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOUsuario" nillable="true" type="tns:DTOUsuario" />
+  <xs:complexType name="ArrayOfDTOGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOGrupo" nillable="true" type="tns:DTOGrupo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOGrupo" nillable="true" type="tns:ArrayOfDTOGrupo" />
+  <xs:complexType name="DTOGrupo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOGrupo" nillable="true" type="tns:DTOGrupo" />
+</xs:schema>

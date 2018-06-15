@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Inicio.master.cs" Inherits="InterfazWeb.Master.Inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../theme/css/inicio.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GestionTramite</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="Panel_Img" runat="server">
+                    <div id="LeftInicio">
+                        <img src="../theme/img/InicioGestion.jpg"/>
+                        Yo
+                    </div>
+            </asp:Panel>
+            <asp:Panel ID="Panel_Head" runat="server">
+                <div id="ToptInicio">
+                    <img src="../theme/img/TituloGestionTramite.png"/>
+                    Yo
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="Panel_Content" runat="server">
+                 
+                 <div id="Content">
+                     
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                     </asp:ContentPlaceHolder>
+                 </div>
+            </asp:Panel>
+
+
+           
+        </div>
+    </form>
+</body>
+</html>

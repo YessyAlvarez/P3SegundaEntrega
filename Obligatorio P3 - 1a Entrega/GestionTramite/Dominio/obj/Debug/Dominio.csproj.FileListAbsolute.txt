@@ -1,0 +1,18 @@
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\bin\Debug\Dominio.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\bin\Debug\AccesoDB.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\bin\Debug\AccesoDB.pdb
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\obj\Debug\Dominio.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\bin\Debug\Dominio.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\bin\Debug\AccesoDB.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\bin\Debug\AccesoDB.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\obj\Debug\Dominio.csproj.CopyComplete
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\obj\Debug\Dominio.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\Dominio\obj\Debug\Dominio.pdb

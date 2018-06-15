@@ -1,0 +1,30 @@
+﻿body {
+    background: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.SeñaAPagar {
+    background-color: #d1d1d1;
+}
+
+#HeadAdmin {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+    #HeadAdmin img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+.isLoginTrue {
+    width: 100%;
+    background: #DDDDDD;
+}
+#PanelMenuLateral {
+    margin: 0 2% 0 0;
+}
+

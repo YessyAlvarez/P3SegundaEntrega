@@ -1,0 +1,11 @@
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\AccesoDB\bin\Debug\AccesoDB.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\AccesoDB\bin\Debug\AccesoDB.pdb
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\AccesoDB\obj\Debug\AccesoDB.csproj.CoreCompileInputs.cache
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\AccesoDB\obj\Debug\AccesoDB.dll
+C:\Users\Jessi\Desktop\armar entregable\0.1\GestionTramite\AccesoDB\obj\Debug\AccesoDB.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\AccesoDB\bin\Debug\AccesoDB.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\AccesoDB\bin\Debug\AccesoDB.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\AccesoDB\obj\Debug\AccesoDB.csproj.CoreCompileInputs.cache
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\AccesoDB\obj\Debug\AccesoDB.dll
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\AccesoDB\obj\Debug\AccesoDB.pdb
+C:\Users\Jessi\Desktop\CD Defensa\Obligatorio P3 - 1a Entrega\GestionTramite\AccesoDB\obj\Debug\AccesoDB.csprojResolveAssemblyReference.cache
